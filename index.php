@@ -1,8 +1,8 @@
 <?
-
+define('PATH_LOG', 'path.log');
 include 'inc/log.inc.php';
-	include 'inc/headers.inc.php';
-    include 'inc/cookie.inc.php';
+include 'inc/headers.inc.php';
+include 'inc/cookie.inc.php';
 ?>
 <!DOCTYPE html>
 <html>

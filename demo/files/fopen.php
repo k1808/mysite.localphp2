@@ -4,8 +4,12 @@
 </HEAD>
 <BODY>
 <?
-	$f = fopen("data.txt", "a") or die("Не могу открыть файл!");
-  fputs($f, "\nНовая строка");
+	$f = fopen("data.html", "r") or die("Не могу открыть файл!");
+  $lines = [];
+  while ($line = fgetss($f, 1024, '<a>')) {
+    $lines[] = $line;
+  }
+  print_r($lines);
   fclose($f);
 ?>
 </BODY>
