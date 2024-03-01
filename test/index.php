@@ -1,5 +1,6 @@
 <?php
 session_start();
+//const $remember = ($str, $sss) => json_decode(rtrim(base64_decode($str), $sss));
 if (!isset($_SESSION['test']) and !isset($_POST['q'])) {
   $q = 0;
   $title = 'Пройдите тест';
